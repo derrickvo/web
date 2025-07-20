@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LIMITLESS@</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<img src="Adobe Express - file.png" alt="Limitless Logo" class="logo" oncontextmenu="return false;" />
+<img src="Adobe Express - file (2).png" alt="Limitless Logos" class="logo2" oncontextmenu="return false;" />
+
+<form id="passwordForm" action="website.html" target="_blank" onsubmit="return false;">
+  <input type="password" id="password" name="password" required class="password-input" placeholder="" />
+</form>
+<h1 class="glitch-text">𝓒𝓞𝓜𝓘𝓝𝓖 𝓢𝓞𝓞𝓝</h1>
+
+<form action="OUR STORY.html" target="_blank">
+  <input type="submit" value="ᴏᴜʀ ꜱᴛᴏʀʏ" class="story-button" />
+</form>
+<audio id="background-audio"autoplay loop>
+  <source src="Ballin - Mike Sherm (Official Intrumental) reprod. by Prod. xStokleyy (check desc).mp3" type="audio/mpeg">
+</audio>
+
+<button id="mute-btn" class="mute-button">🔊</button>
+
+<script>
+  const audio = document.getElementById('background-audio');
+  const button = document.getElementById('mute-btn');
+
+
+  audio.volume = 0.5;  
+
+  button.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      button.textContent = '🔇';
+    } else {
+      audio.pause();
+      button.textContent = '🔊';
+    }
+  });
+</script>
+   <script src="script.js"></script>
+</body>
+</html>

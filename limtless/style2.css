@@ -1,0 +1,91 @@
+body {
+  background-image: url('Texturelabs_InkPaint_411S.png');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.logo, .logo2 {
+  user-drag: none;           /* For some browsers */
+  -webkit-user-drag: none;   /* Safari and Chrome */
+  -moz-user-drag: none;      /* Firefox */
+  -ms-user-drag: none;       /* IE */
+}
+.logo2{
+  width: 450px;    /* adjust size */
+  height: auto;
+  display: block;  /* makes sure it behaves like a block */
+  margin: 10px auto; /* centers the logo horizontally */
+  margin-left: 725px;
+  margin-top: -100px;
+}
+
+.home-button{
+  position: fixed;
+  top: 60px;      
+  left: 150px;     
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 60px;
+  background: transparent;
+
+}
+.shop-button{
+  position: fixed;
+  top: 60px;      
+  left: 450px;     
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 60px;
+  background: transparent;
+}
+
+.return-button{
+  position: fixed;
+  top: 60px;      
+  left: 1180px;     
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 60px;
+  background: transparent;
+}
+
+h1{
+    width: 450px;    /* adjust size */
+  height: auto;
+  display: block;  /* makes sure it behaves like a block */
+  margin: 10px auto; /* centers the logo horizontally */
+  margin-left: 600px;
+  margin-top: 10px;
+}
+
+.cart-button{
+  position: fixed;
+  top: 60px;      
+  left: 1700px;     
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 60px;
+  background: transparent;
+}

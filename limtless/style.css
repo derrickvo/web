@@ -1,0 +1,142 @@
+body {
+  background-image: url('Texturelabs_InkPaint_411S.png');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.logo, .logo2 {
+  user-drag: none;           /* For some browsers */
+  -webkit-user-drag: none;   /* Safari and Chrome */
+  -moz-user-drag: none;      /* Firefox */
+  -ms-user-drag: none;       /* IE */
+}
+
+.logo {
+  width: 200px;    /* adjust size */
+  height: auto;
+  display: block;  /* makes sure it behaves like a block */
+  margin: 10px auto; /* centers the logo horizontally */
+  margin-left: -58px;
+  margin-top: -55px;
+  opacity: 1;
+}
+
+.logo2{
+  width: 900px;    /* adjust size */
+  height: auto;
+  display: block;  /* makes sure it behaves like a block */
+  margin: 10px auto; /* centers the logo horizontally */
+  margin-left: 530px;
+  margin-top: -200px;
+}
+
+.password-input {
+  padding: 10px 50px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 280px;
+  display: block;
+  margin: 20px auto;
+  pointer-events: auto;
+  background-color: white;
+  color: black;
+  position: relative;
+  z-index: 10;
+  margin-top: -150px;
+}
+
+.story-button {
+  position: fixed;
+  display: block;
+  margin: 230px auto; /* centers horizontally */
+  padding: 15px 55px;
+  background-color: rgb(62, 61, 61);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left:860px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.mute-button {
+  position: fixed;
+  top: 20px;      
+  right: 20px;     
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;  
+  font-size: 25px;
+  background: transparent;
+}
+
+.glitch-text {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: 'Cursive', serif;
+  margin-top: -170px;
+  margin-right: 20px;
+  animation: glitch 1s infinite;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.glitch-text::before {
+  animation: glitchTop 1s infinite linear;
+  color: #ff00c8;
+}
+
+.glitch-text::after {
+  animation: glitchBottom 1s infinite linear;
+  color: #00fff9;
+}
+
+@keyframes glitch {
+  0% { transform: none; }
+  20% { transform: skew(-5deg); }
+  40% { transform: skew(5deg); }
+  60% { transform: translate(-2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: none; }
+}
+
+@keyframes glitchTop {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(10px, 9999px, 50px, 0); transform: translate(-2px, -2px); }
+  50% { clip: rect(85px, 9999px, 140px, 0); transform: translate(2px, -1px); }
+  100% { clip: rect(0, 9999px, 0, 0); transform: none; }
+}
+
+@keyframes glitchBottom {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(10px, 9999px, 50px, 0); transform: translate(2px, 2px); }
+  50% { clip: rect(85px, 9999px, 140px, 0); transform: translate(-2px, 1px); }
+  100% { clip: rect(0, 9999px, 0, 0); transform: none; }
+}
